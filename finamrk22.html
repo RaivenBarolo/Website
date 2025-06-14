@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FinMark Corporation</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background-color: #395ea4;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 1.8em;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+
+    .tabs {
+      display: flex;
+      background: #ffffff;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 15px;
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+      color: #395ea4;
+      transition: background 0.3s;
+    }
+
+    .tab:hover {
+      background: #eef1f6;
+    }
+
+    .tab.active {
+      border-bottom: 3px solid #395ea4;
+      background: #eef1f6;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      background: white;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    button {
+      background: #395ea4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2f4e8c;
+    }
+
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">FinMark Corporation</div>
+  </header>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('home')">Home</div>
+    <div class="tab" onclick="showTab('services')">Our Services</div>
+    <div class="tab" onclick="showTab('about')">About Us</div>
+    <div class="tab" onclick="showTab('contact')">Contact Us</div>
+  </div>
+
+  <div id="home" class="tab-content active">
+    <h2>Welcome to FinMark</h2>
+    <p>We’re glad to have you with us! At FinMark, we’re all about making banking super secure, easy to use, and smarter for today’s fast-paced money world. Why don’t you take a peek at what we can do for you?</p>
+	<p>You know, we're more than just a bunch of people at a company here—we're like a little family working together to make the future of finance secure!</p>
+  </div>
+
+  <div id="services" class="tab-content">
+    <h2>Our Services</h2>
+    <p>We offer digital financial platforms, payment integration, and data security solutions tailored for businesses aiming to scale.</p>
+	<p>Our specialized product range to advanced digital banking platforms, seamless payment integration systems, and secure data security measures, all carefully tailored to meet the diverse and needs of businesses to achieve growth in financial.</p>
+    <button onclick="alert('Service inquiry sent!')">Inquire Now</button>
+  </div>
+
+  <div id="about" class="tab-content">
+    <h2>About Us</h2>
+    <p>This website is created by Group 6 S3102 Platform Technologies.</p>
+	<p>This will serve as a Draft for the actual product.</p>
+    <button onclick="toggleCollapse()">Read More</button>
+    <div id="aboutMore" style="display: none; margin-top: 10px;">
+      <p>we are true in our commitment to provide you with the effective tools to dominate in the digital marketplace. Our team guarantees reliability, honest to regulations, and a innovation in every solution we do.
+</p>
+    </div>
+  </div>
+
+  <div id="contact" class="tab-content">
+    <h2>Contact</h2>
+    <p>Have questions? Just drop a message to our gmail.</p>
+    <button onclick="alert('Redirecting to contact form...')">Contact Us</button>
+  </div>
+
+ <script src="fun.js"></script>
+
+</body>
+</html>
